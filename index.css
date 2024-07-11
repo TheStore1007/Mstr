@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+      --ft-1: 'Barlow Condensed', sans-serif;
+      --ft-2: 'Roboto', sans-serif;
+
+      --bg: #f5f5f5;
+      --text-200: #151515;
+      --text-100: #686868;
+      --border: #a3afc9;
+      --head: #000088;
+      --td: #fff;
+      --td-even: #f4f6f8;
+      --td-hover: #e3e9f5;
+
+      font-size: 62.5%;
+      font-family: var(--ft-1);
+      color: var(--text-200);
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      background: var(--bg);
+      overflow-x: hidden;
+      font-size: 1.6rem;
+}
+
+:before,
+:after{
+      content: '';
+      position: absolute;
+}
+
+.flex{
+      display: flex;
+}
+
+.template{
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+}
+
+.container{
+      width: 72.8rem;
+      height: auto;
+      margin: 0 auto;
+}
+
+.banner{
+      margin-top: 8rem;
+      width: 100%;
+      height: 9rem;
+      border-radius: .6rem;
+      overflow: hidden;
+}
+
+.title{
+      margin-top: 2rem;
+      width: 100%;
+      align-items: center;
+      position: relative;
+}
+
+.title:before{
+      width: 77%;
+      height: .5rem;
+      background: var(--head);
+      right: 0;
+      bottom: 0;
+}
+
+.title h1{
+      text-transform: uppercase;
+}
+
+.table_content{
+      margin-top: 3rem;
+}
+
+.dt-layout-row.dt-layout-table{
+      margin-top: 2rem;
+}
+
+.dataTable{
+      border-radius: .6rem;
+      overflow: hidden;
+      border-collapse: collapse;
+}
+
+.dataTable colgroup{
+      display: none;
+}
+
+.dataTable thead tr{
+      background: var(--head);
+      height: 5rem;
+      border-radius: .6rem .6rem 0 0;
+      overflow: hidden;
+      color: #fff;
+}
+
+.dataTable thead tr th{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+}
+
+.dataTable tbody{
+      border: none;
+}
+
+.dataTable tbody tr{
+      background: var(--td) !important;
+      height: 5rem;
+      border-bottom: solid .1rem var(--border);
+      font-family: var(--ft-2);
+}
+
+.dataTable tbody tr:nth-child(even){
+      background: var(--td-even) !important;
+}
+
+.dataTable tbody tr:hover{
+      background: var(--td-hover) !important;
+}
+
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+      text-align: center;
+}
+
+
+.footer{
+      width: 100%;
+      height: 8rem;
+      margin-top: 5rem;
+      flex-direction: column;
+      align-items: center;
+      background: var(--head);
+      justify-content: center;
+}
+
+.footer p a{
+      color: var(--td);
+      font-style: italic;
+}
+
+.footer strong{
+      margin-top: 1rem;
+      font-size: 2rem;
+      color: var(--td);
+      font-weight: 600;
+      font-family: var(--ft-2);
+}
